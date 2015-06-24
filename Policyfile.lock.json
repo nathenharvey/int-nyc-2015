@@ -1,0 +1,375 @@
+{
+  "revision_id": "9f0588fc1f37450a3e73e9735e7cd75f16fb820bf8b186c0a39c34b99a682e85",
+  "name": "chef-intermediate-workshop",
+  "run_list": [
+    "recipe[email_handler::default]",
+    "recipe[chef-client::delete_validation]",
+    "recipe[chef-client::default]",
+    "recipe[chef-client::config]",
+    "recipe[ntp::default]",
+    "recipe[motd::default]",
+    "recipe[users::default]",
+    "recipe[apache::default]"
+  ],
+  "cookbook_locks": {
+    "email_handler": {
+      "version": "0.1.0",
+      "identifier": "9f0bf34345940b86956110069a0d0f043ad8162e",
+      "dotted_decimal_identifier": "44767660730586123.37881890992462349.16510841525806",
+      "source": "cookbooks/email_handler",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": "4c5174d0b7c272da2b4d4adfd84b486a88496de0",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "cookbooks/email_handler"
+      }
+    },
+    "mailx": {
+      "version": "0.1.0",
+      "identifier": "e4808d60bfe43e1be905d1f8b3b538193dd71749",
+      "dotted_decimal_identifier": "64317639391962174.7856035578033077.61681062844233",
+      "source": "cookbooks/mailx",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": "4c5174d0b7c272da2b4d4adfd84b486a88496de0",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "cookbooks/mailx"
+      }
+    },
+    "motd": {
+      "version": "0.1.0",
+      "identifier": "2d04b8b43fb201e8bf66a34cfafa329841189359",
+      "dotted_decimal_identifier": "12671565296546305.65512642144172794.55629508547417",
+      "source": "cookbooks/motd",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": "4c5174d0b7c272da2b4d4adfd84b486a88496de0",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "cookbooks/motd"
+      }
+    },
+    "apache": {
+      "version": "0.4.0",
+      "identifier": "fc50b17c55b8e0e9862faf608773daf7a884d3f8",
+      "dotted_decimal_identifier": "71020417356511456.65731208937506675.240757219054584",
+      "source": "cookbooks/apache",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": "4c5174d0b7c272da2b4d4adfd84b486a88496de0",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "cookbooks/apache"
+      }
+    },
+    "users": {
+      "version": "0.1.0",
+      "identifier": "24964da834f57f14fdd405f58e7a06967bed0838",
+      "dotted_decimal_identifier": "10298359440274815.5908586609086074.7243393992760",
+      "source": "cookbooks/users",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": "4c5174d0b7c272da2b4d4adfd84b486a88496de0",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "cookbooks/users"
+      }
+    },
+    "pci": {
+      "version": "0.1.0",
+      "identifier": "1d4b7749a48c57a4c52c7631f42536c052b8bc10",
+      "dotted_decimal_identifier": "8245750033321047.46378690932765733.60199649459216",
+      "source": "cookbooks/pci",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": "4c5174d0b7c272da2b4d4adfd84b486a88496de0",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "cookbooks/pci"
+      }
+    },
+    "chef_handler": {
+      "version": "1.1.9",
+      "identifier": "71fcc08a7f8ca4904b6efc5cbc9a8c403bd39440",
+      "dotted_decimal_identifier": "32084576255839396.40615336698756250.154207509517376",
+      "cache_key": "chef_handler-1.1.9-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io/api/v1/cookbooks/chef_handler/versions/1.1.9/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io/api/v1/cookbooks/chef_handler/versions/1.1.9/download",
+        "version": "1.1.9"
+      }
+    },
+    "postfix": {
+      "version": "3.7.0",
+      "identifier": "2669f92ef8a313ab918896ed2f558f628e7aecc7",
+      "dotted_decimal_identifier": "10812568070824723.48292236851228501.157653459987655",
+      "cache_key": "postfix-3.7.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io/api/v1/cookbooks/postfix/versions/3.7.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io/api/v1/cookbooks/postfix/versions/3.7.0/download",
+        "version": "3.7.0"
+      }
+    },
+    "chef-client": {
+      "version": "4.3.0",
+      "identifier": "4326c5d511f7ab1ad9bb7da5f7b8ccf772f31513",
+      "dotted_decimal_identifier": "18901454564751275.7557748684617656.225363157521683",
+      "cache_key": "chef-client-4.3.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io/api/v1/cookbooks/chef-client/versions/4.3.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io/api/v1/cookbooks/chef-client/versions/4.3.0/download",
+        "version": "4.3.0"
+      }
+    },
+    "cron": {
+      "version": "1.6.1",
+      "identifier": "b4795f4a95d2078ed08bdfd1536396e799481d57",
+      "dotted_decimal_identifier": "50798945988104711.40198745866982243.165921453251927",
+      "cache_key": "cron-1.6.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io/api/v1/cookbooks/cron/versions/1.6.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io/api/v1/cookbooks/cron/versions/1.6.1/download",
+        "version": "1.6.1"
+      }
+    },
+    "logrotate": {
+      "version": "1.9.2",
+      "identifier": "f5a688be24dde794714133d5810a5fc23d4b02a9",
+      "dotted_decimal_identifier": "69144475529960935.41782821409620234.105287856620201",
+      "cache_key": "logrotate-1.9.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io/api/v1/cookbooks/logrotate/versions/1.9.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io/api/v1/cookbooks/logrotate/versions/1.9.2/download",
+        "version": "1.9.2"
+      }
+    },
+    "windows": {
+      "version": "1.37.0",
+      "identifier": "62c03b4fd86ec9b62a37eaa0a5c4fdf220d71da9",
+      "dotted_decimal_identifier": "27795908692831945.51274865409304004.279216374881705",
+      "cache_key": "windows-1.37.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io/api/v1/cookbooks/windows/versions/1.37.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io/api/v1/cookbooks/windows/versions/1.37.0/download",
+        "version": "1.37.0"
+      }
+    },
+    "ntp": {
+      "version": "1.8.6",
+      "identifier": "ecf1437a02492ded49f5f000e0790fa469d39fbf",
+      "dotted_decimal_identifier": "66693366615787821.66790890122829945.17198824529855",
+      "cache_key": "ntp-1.8.6-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io/api/v1/cookbooks/ntp/versions/1.8.6/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io/api/v1/cookbooks/ntp/versions/1.8.6/download",
+        "version": "1.8.6"
+      }
+    },
+    "ohai": {
+      "version": "2.0.1",
+      "identifier": "06df076427806a12abaa2558e8c3b9641d0d5f8f",
+      "dotted_decimal_identifier": "1934072698339434.5255296840165571.203839635283855",
+      "cache_key": "ohai-2.0.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io/api/v1/cookbooks/ohai/versions/2.0.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io/api/v1/cookbooks/ohai/versions/2.0.1/download",
+        "version": "2.0.1"
+      }
+    }
+  },
+  "default_attributes": {
+    "chef_client": {
+      "config": {
+        "ssl_verify_mode": ":verify_peer",
+        "log_level": ":info"
+      }
+    },
+    "ohai": {
+      "disabled_plugins": [
+        ":Passwd"
+      ]
+    }
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "email_handler",
+        ">= 0.0.0"
+      ],
+      [
+        "mailx",
+        ">= 0.0.0"
+      ],
+      [
+        "motd",
+        ">= 0.0.0"
+      ],
+      [
+        "apache",
+        ">= 0.0.0"
+      ],
+      [
+        "users",
+        ">= 0.0.0"
+      ],
+      [
+        "pci",
+        ">= 0.0.0"
+      ],
+      [
+        "chef_handler",
+        "= 1.1.9"
+      ],
+      [
+        "postfix",
+        "= 3.7.0"
+      ],
+      [
+        "chef-client",
+        "= 4.3.0"
+      ],
+      [
+        "cron",
+        "= 1.6.1"
+      ],
+      [
+        "logrotate",
+        "= 1.9.2"
+      ],
+      [
+        "windows",
+        "= 1.37.0"
+      ],
+      [
+        "ntp",
+        "= 1.8.6"
+      ],
+      [
+        "ohai",
+        "= 2.0.1"
+      ]
+    ],
+    "dependencies": {
+      "email_handler (0.1.0)": [
+        [
+          "chef_handler",
+          ">= 0.0.0"
+        ],
+        [
+          "postfix",
+          ">= 0.0.0"
+        ],
+        [
+          "mailx",
+          ">= 0.0.0"
+        ]
+      ],
+      "chef_handler (1.1.9)": [
+
+      ],
+      "postfix (3.7.0)": [
+
+      ],
+      "mailx (0.1.0)": [
+
+      ],
+      "chef-client (4.3.0)": [
+        [
+          "cron",
+          ">= 1.2.0"
+        ],
+        [
+          "logrotate",
+          ">= 1.2.0"
+        ],
+        [
+          "windows",
+          "~> 1.11"
+        ]
+      ],
+      "cron (1.6.1)": [
+
+      ],
+      "logrotate (1.9.2)": [
+
+      ],
+      "windows (1.37.0)": [
+        [
+          "chef_handler",
+          ">= 0.0.0"
+        ]
+      ],
+      "ntp (1.8.6)": [
+
+      ],
+      "motd (0.1.0)": [
+        [
+          "pci",
+          ">= 0.0.0"
+        ]
+      ],
+      "pci (0.1.0)": [
+
+      ],
+      "users (0.1.0)": [
+
+      ],
+      "apache (0.4.0)": [
+        [
+          "ohai",
+          ">= 0.0.0"
+        ]
+      ],
+      "ohai (2.0.1)": [
+
+      ]
+    }
+  }
+}
